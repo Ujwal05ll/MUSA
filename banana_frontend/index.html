@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Banana Leaf Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>🍃 MUSA</h1>
+    <p class="subtitle">Upload and analyze banana leaf images</p>
+
+    <input type="file" id="imageInput" accept="image/*" hidden>
+
+    <button id="chooseBtn" onclick="chooseImage()">Choose Image</button>
+
+    <div class="image-box">
+        <img id="preview">
+    </div>
+
+    <!-- Analyze button only -->
+    <button id="analyzeBtn" onclick="analyze()">Analyze</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
